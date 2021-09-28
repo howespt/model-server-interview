@@ -12,7 +12,7 @@ The model serialized as `models/rfcmodel.joblib` is a scikit-learn RandomForestC
 ```python
 import joblib
 
-model = joblib.load('models/rfcmodel.joblib
+model = joblib.load('models/rfcmodel.joblib')
 model
 
 {'model': RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
