@@ -7,6 +7,13 @@ Write a basic model server that does the following
 - Loads a model from disk
 - Serves that model at a route `/predict`
 
+We should be able to run
+
+```
+curl -X POST http://localhost:5000/predict -d '{ "inputs": [[1,1,1,1]]  }'
+```
+and get a response.
+
 The model serialized as `models/rfcmodel.joblib` is a scikit-learn RandomForestClassifier trained on the Iris dataset. It can be loaded into memory with
 
 ```python
